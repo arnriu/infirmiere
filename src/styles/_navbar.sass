@@ -1,0 +1,73 @@
+.nav-link
+    position: relative
+    color: $dark
+
+    &:hover
+        color: $gray-800
+        text-decoration: underline
+
+    &.active
+        &::after
+            content: ''
+            display: block
+            position: absolute
+            bottom: 0
+            left: 3rem
+            right: 3rem
+            height: 2px
+            border-radius: 2px
+
+header
+    .nav-link
+        &:hover
+            text-decoration: none
+
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                bottom: 0
+                left: 3rem
+                right: 3rem
+                height: 2px
+                border-radius: 2px
+
+footer
+    .nav-link
+        color: $white
+
+        &:hover
+            color: $gray-300
+
+        &:active, &:focus
+            color: $white
+
+.green
+    .nav-link
+        &.active
+            &::after
+                background: $green-400
+
+        &:hover
+            &::after
+                background: $green-500
+
+.purple
+    .nav-link
+        &.active
+            &::after
+                background: $purple-400
+
+        &:hover
+            &::after
+                background: $purple-500
+
+.red
+    .nav-link
+        &.active
+            &::after
+                background: $red-400
+
+        &:hover
+            &::after
+                background: $red-500

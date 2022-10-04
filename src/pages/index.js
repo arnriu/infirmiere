@@ -1,176 +1,501 @@
-import * as React from "react"
+import * as React from 'react'
+import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
-const pageStyles = {
-  color: "#232129",
-  padding: 96,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-const headingAccentStyles = {
-  color: "#663399",
-}
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-const listStyles = {
-  marginBottom: 96,
-  paddingLeft: 0,
-}
-const listItemStyles = {
-  fontWeight: 300,
-  fontSize: 24,
-  maxWidth: 560,
-  marginBottom: 30,
-}
+import Layout from '../components/Layout'
 
-const linkStyle = {
-  color: "#8954A8",
-  fontWeight: "bold",
-  fontSize: 16,
-  verticalAlign: "5%",
-}
+const IndexPage = () => (
+  <Layout pageColor="green">
+    <section className="mb-3">
+      <div className="container hero hero-header hero-home">
+        <div className="row">
+          <div className="col-12 col-lg-6">
+            <h1 className="mb-4">Infirmière Libérale</h1>
+            <p className="mb-5">
+              Bonjour, je suis Caroline !<br />
+              <br />
+              Après de longues années d’expérience à l’hôpital, me voici
+              désormais infirmière libérale en tant qu’entrepreneur indépendant.
+              <br />
+              <br />
+              Depuis 4 ans maintenant, je me déplace au domicile des patients
+              pour prodiguer leurs soins.
+            </p>
+            <Link className="btn btn-green me-5" to="/a-propos">
+              En savoir plus
+            </Link>
+            <Link className="btn btn-green" to="/contact">
+              Prendre RDV
+            </Link>
+          </div>
+          <div className="col">
+            <div className="home-image">
+              <StaticImage
+                src="../images/home.svg"
+                alt=""
+                placeholder="tracedSVG"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  marginBottom: 24,
-}
+    <section className="py-5">
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <p className="quote text-center px-5 fs-2 pb-5">
+              “En tant qu'infirmière, nous avons la possibilité de guérir le
+              cœur, l'esprit, l'âme et le corps de nos patients, de leurs
+              familles et de nous-mêmes. Ils peuvent oublier votre nom, mais ils
+              n'oublieront jamais ce que vous leur avez fait ressentir.”
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-const descriptionStyle = {
-  color: "#232129",
-  fontSize: 14,
-  marginTop: 10,
-  marginBottom: 0,
-  lineHeight: 1.25,
-}
+    <section className="bg-light py-5">
+      <div className="container">
+        <div className="row mb-3">
+          <strong className="text-green text-uppercase text-badge">
+            Soins à domicile
+          </strong>
+        </div>
+        <div className="row mb-5">
+          <div className="col">
+            <h2>
+              N'ayez plus peur
+              <br />
+              de guérir
+            </h2>
+          </div>
+          <div className="col text-secondary">
+            Conventionnée Assurance Maladie, AME, CSS, CMU, toutes mutuelles.
+            100% prise en charge par la sécurité sociale et votre complémentaire
+            santé sans avance de frais.
+          </div>
+        </div>
 
-const docLink = {
-  text: "Documentation",
-  url: "https://www.gatsbyjs.com/docs/",
-  color: "#8954A8",
-}
+        <div className="row mb-4">
+          <div className="col">
+            <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+                <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
+                  <StaticImage
+                    src="../images/pansement.svg"
+                    alt=""
+                    placeholder="tracedSVG"
+                  />
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">Pansements</h5>
+                <div className="card-text text-secondary">
+                  Suivi des plaies chroniques ou post-opératoires. Pansements
+                  courants, lourds ou complexes.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+                <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
+                  <StaticImage
+                    src="../images/seringue.svg"
+                    alt=""
+                    placeholder="tracedSVG"
+                  />
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">
+                  Injections / Prélèvements
+                </h5>
+                <div className="card-text text-secondary">
+                  Intra-musculaire, sous-cutanné, intra-veineuse, ou tout autre
+                  type de prélèvement.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+                <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
+                  <StaticImage
+                    src="../images/perfusion.svg"
+                    alt=""
+                    placeholder="tracedSVG"
+                  />
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">Perfusions</h5>
+                <div className="card-text text-secondary">
+                  Intra-veineux ou sous-cutané, de courte ou longue durée
+                  (antibiotique, hydratation, chimio..)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+                <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
+                  <StaticImage
+                    src="../images/pills.svg"
+                    alt=""
+                    placeholder="tracedSVG"
+                  />
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">Traitements</h5>
+                <div className="card-text text-secondary">
+                  Administration de traitements, préparation des semainiers,
+                  etc.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-const badgeStyle = {
-  color: "#fff",
-  backgroundColor: "#088413",
-  border: "1px solid #088413",
-  fontSize: 11,
-  fontWeight: "bold",
-  letterSpacing: 1,
-  borderRadius: 4,
-  padding: "4px 6px",
-  display: "inline-block",
-  position: "relative",
-  top: -2,
-  marginLeft: 10,
-  lineHeight: 1,
-}
+        <div className="row">
+          <div className="col">
+            <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+                <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
+                  <StaticImage
+                    src="../images/time.svg"
+                    alt=""
+                    placeholder="tracedSVG"
+                  />
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">Pathologies chroniques</h5>
+                <div className="card-text text-secondary">
+                  Suivi de diabète, BPCO, maladie de Parkinson, insuffisance
+                  cardiaque, etc...
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+                <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
+                  <StaticImage
+                    src="../images/virus.svg"
+                    alt=""
+                    placeholder="tracedSVG"
+                  />
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">COVID-19</h5>
+                <div className="card-text text-secondary">
+                  Test antigéniques, PCR, vaccination et rappels.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+                <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
+                  <StaticImage
+                    src="../images/larynx.svg"
+                    alt=""
+                    placeholder="tracedSVG"
+                  />
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">Soins de stomie</h5>
+                <div className="card-text text-secondary">
+                  Pansements avec matériel adapté, évaluation et quantification
+                  des sorties.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+                <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
+                  <StaticImage
+                    src="../images/douche.svg"
+                    alt=""
+                    placeholder="tracedSVG"
+                  />
+                </div>
+              </div>
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">Hygiène et confort</h5>
+                <div className="card-text text-secondary">
+                  Aide à la toilette et change vestimentaire.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-]
+    <section className="py-5">
+      <div className="container">
+        <div className="row align-items-center">
+          <div className="col">
+            <div className="cropped-bg-img bg-green-100 ps-5 py-5 rounded-4 w-50">
+              <StaticImage
+                className="rounded-4"
+                src="../images/patient-receiving-dental-treatment.png"
+                alt=""
+                placeholder="blurred"
+              />
+            </div>
+          </div>
+          <div className="col">
+            <div className="row mb-3">
+              <strong className="text-green text-uppercase text-badge">
+                Diplomée d’état
+              </strong>
+            </div>
+            <div className="row mb-3">
+              <div className="col">
+                <h2>Spécialité pédiatrique</h2>
+              </div>
+            </div>
+            <div className="row mb-4">
+              <div className="col text-secondary">
+                Utilisation de techniques spécifiques de prise en charge de la
+                douleur chez l’enfant, (solution sucrée, distraction,
+                allaitement maternel…)
+                <br />
+                <br />
+                Prélèvement sanguin et urinaire, pansement, injections,
+                perfusions, nutrition entérale sur sonde naso gastrique, soins
+                de stomie, chimiothérapie…
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <Link className="btn btn-green" to="/contact">
+                  Prendre RDV
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-const IndexPage = () => {
-  return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>
-        Congratulations
-        <br />
-        <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
-      </h1>
-      <p style={paragraphStyles}>
-        Edit <code style={codeStyles}>src/pages/index.js</code> to see this page
-        update in real-time. 😎
-      </p>
-      <ul style={listStyles}>
-        <li style={docLinkStyle}>
-          <a
-            style={linkStyle}
-            href={`${docLink.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-          >
-            {docLink.text}
-          </a>
-        </li>
-        {links.map(link => (
-          <li key={link.url} style={{ ...listItemStyles, color: link.color }}>
-            <span>
-              <a
-                style={linkStyle}
-                href={`${link.url}?utm_source=starter&utm_medium=start-page&utm_campaign=minimal-starter`}
-              >
-                {link.text}
-              </a>
-              {link.badge && (
-                <span style={badgeStyle} aria-label="New Badge">
-                  NEW!
-                </span>
-              )}
-              <p style={descriptionStyle}>{link.description}</p>
-            </span>
-          </li>
-        ))}
-      </ul>
-      <img
-        alt="Gatsby G Logo"
-        src="data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 2a10 10 0 110 20 10 10 0 010-20zm0 2c-3.73 0-6.86 2.55-7.75 6L14 19.75c3.45-.89 6-4.02 6-7.75h-5.25v1.5h3.45a6.37 6.37 0 01-3.89 4.44L6.06 9.69C7 7.31 9.3 5.63 12 5.63c2.13 0 4 1.04 5.18 2.65l1.23-1.06A7.959 7.959 0 0012 4zm-8 8a8 8 0 008 8c.04 0 .09 0-8-8z' fill='%23639'/%3E%3C/svg%3E"
-      />
-    </main>
-  )
-}
+    <section className="mb-3">
+      <div className="container hero py-5">
+        <div className="row mt-4 mb-5">
+          <div className="col-10 offset-1">
+            <div className="row mb-3">
+              <strong className="text-green text-uppercase text-badge">
+                Services
+              </strong>
+            </div>
+            <div className="row mb-3">
+              <div className="col">
+                <h2>L’assurance d’être entre de bonnes mains</h2>
+              </div>
+            </div>{' '}
+            <div className="row">
+              <div className="col-8 text-secondary">
+                J’appréhende intuitivement le « prendre soin » comme le cœur de
+                mon métier et je me le représente idéalement comme généreux et
+                bienveillant.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-10 offset-1">
+            <div className="row mb-4">
+              <div className="col">
+                <div className="d-flex">
+                  <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
+                    <StaticImage
+                      src="../images/check.svg"
+                      alt=""
+                      placeholder="tracedSVG"
+                    />
+                  </div>
+                  <div className="ms-2">
+                    <h5>
+                      <strong>Responsabilité et sécurité</strong>
+                    </h5>
+                    <div className="card-text text-secondary">
+                      En acceptant mes services, vous serez toujours traité de
+                      la meilleure des manières.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="d-flex">
+                  <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
+                    <StaticImage
+                      src="../images/hands.svg"
+                      alt=""
+                      placeholder="tracedSVG"
+                    />
+                  </div>
+                  <div className="ms-2">
+                    <h5>
+                      <strong>Facilité de remboursement</strong>
+                    </h5>
+                    <div className="card-text text-secondary">
+                      Conventionnée Assurance Maladie, AME, CSS, CMU, toutes
+                      mutuelles.
+                      <br />
+                      Prise en charge par la sécurité sociale et complémentaire
+                      santé sans avance de frais.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="row mb-5">
+              <div className="col">
+                <div className="d-flex">
+                  <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
+                    <StaticImage
+                      src="../images/caducet.svg"
+                      alt=""
+                      placeholder="tracedSVG"
+                    />
+                  </div>
+                  <div className="ms-2">
+                    <h5>
+                      <strong>Secret professionnel</strong>
+                    </h5>
+                    <div className="card-text text-secondary">
+                      Fidèle au serment d’Hippocrate, vos soins sont exclusifs
+                      et confidentiels.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="d-flex">
+                  <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
+                    <StaticImage
+                      src="../images/heart_hands.svg"
+                      alt=""
+                      placeholder="tracedSVG"
+                    />
+                  </div>
+                  <div className="ms-2">
+                    <h5>
+                      <strong>Respect</strong>
+                    </h5>
+                    <div className="card-text text-secondary">
+                      Du petit pansement aux maladies mortelles, mon rôle est
+                      avant tout de soigner avec tact et sans jugements.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section className="py-5">
+      <div className="container">
+        <div className="row mb-3">
+          <strong className="text-green text-uppercase text-badge">
+            Galerie
+          </strong>
+        </div>
+        <div className="row mb-5">
+          <div className="col">
+            <h2>La preuve en images...</h2>
+          </div>
+          <div className="col text-secondary">
+            Chaque jour et une aventure innoubliable pour mes patients comme
+            pour moi. Nous n’oublierons jamais ces séjours thérapeutiques à
+            Quiberon, ou les soins exercés sur un bateau près de la Teignouse...
+          </div>
+        </div>
+        <div className="row mb-4">
+          <div className="col-5">
+            <StaticImage
+              className="rounded-5 w-100"
+              src="../images/image_31.jpg"
+              alt=""
+              style={{ height: 300 }}
+              placeholder="blurred"
+            />
+          </div>
+          <div className="col-3">
+            <StaticImage
+              className="rounded-5 w-100"
+              src="../images/image_36.jpg"
+              alt=""
+              style={{ height: 300 }}
+              placeholder="blurred"
+            />
+          </div>
+          <div className="col-4">
+            <StaticImage
+              className="rounded-5 w-100"
+              src="../images/image_34.jpg"
+              alt=""
+              style={{ height: 300 }}
+              placeholder="blurred"
+            />
+          </div>
+        </div>
+
+        <div className="row mb-5">
+          <div className="col-3">
+            <StaticImage
+              className="rounded-5 w-100"
+              src="../images/image_35.jpg"
+              alt=""
+              style={{ height: 300 }}
+              placeholder="blurred"
+            />
+          </div>
+          <div className="col-4">
+            <StaticImage
+              className="rounded-5 w-100"
+              src="../images/image_33.jpg"
+              alt=""
+              style={{ height: 300 }}
+              placeholder="blurred"
+            />
+          </div>
+          <div className="col-5">
+            <StaticImage
+              className="rounded-5 w-100"
+              src="../images/image_32.jpg"
+              alt=""
+              style={{ height: 300 }}
+              placeholder="blurred"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </Layout>
+)
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => (
+  <title>Caroline Jomard Serbin, Infirmière libérale à Séné</title>
+)

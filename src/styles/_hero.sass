@@ -1,0 +1,43 @@
+.hero
+    position: relative
+
+    &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        top: 0
+        left: -6rem
+        width: calc(100% + 12rem)
+        height: 100%
+        border-radius: 2rem
+
+        .green &
+            background: $green-400
+
+        .red &
+            background: $red-100
+
+        .purple &
+            background: $purple-100
+
+    &.hero-header
+        padding: 6rem 0
+
+        &:before
+            background-size: 100%
+            background-repeat: no-repeat
+            background-position: center
+
+    &.hero-home
+        &::before
+            background-image: url('../images/vectors1.svg')
+
+    &.hero-about
+        &::before
+            background-image: url('../images/vectors2.svg')
+
+    &.hero-contact
+        padding: 3rem 0 19.5rem 0
+
+        &::before
+            background-image: url('../images/vectors3.svg')

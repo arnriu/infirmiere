@@ -1,0 +1,35 @@
+.card-shadow
+    box-shadow: 0px 4rem 8rem rgba($dark, 0.05)
+
+.card-text
+    font-size: 1rem
+
+.card-img-icon
+    position: relative
+    width: 4.5rem
+    height: 4.5rem
+    padding: .5rem
+
+    &::before
+        content: ''
+        display: block
+        position: absolute
+        top: -.75rem
+        left: -.75rem
+        width: calc(100% + 1.5rem)
+        height: 6rem
+        border-radius: 1rem
+        border: 2px solid $white
+        background: rgba($white, .2)
+
+.card-review-img
+    position: relative
+    transform: translate(0, -50%)
+    margin-bottom: -2.5rem
+
+    > *
+        width: 5rem
+        height: 5rem
+
+        .red &
+            border: .5rem solid $red-100

@@ -1,0 +1,31 @@
+.accordion
+    border-bottom: 1px solid $gray-300
+
+.accordion-item
+    background: linear-gradient(180deg, $red-100, $white)
+
+.accordion-body
+    margin-bottom: 1rem
+
+.accordion-button
+    position: relative
+    font-weight: 700
+    color: $dark
+    border-top: 4px solid transparent
+    padding-bottom: 1.25rem
+
+    &:focus
+        border-top-color: $red
+        box-shadow: none
+
+    &:not(.collapsed)
+        color: $dark
+        border-top-color: $red
+        background: none
+        box-shadow: none
+
+        &::after
+            background-image: var(--bs-accordion-btn-icon)
+
+.accordion-body
+    color: $secondary
