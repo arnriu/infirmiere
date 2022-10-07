@@ -220,7 +220,7 @@ const Contact = () => {
           <div className="row pb-5">
             <div className="col-8 offset-2">
               <a
-                className="nav-link"
+                className="nav-link contact-map"
                 href="https://maps.google.com/maps/dir//19+Pl.+des+Vosges+56860+S%C3%A9n%C3%A9/@47.6503169,-2.72102,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x48101de107715771:0x48c56ad24484755"
                 target="_blank"
                 rel="noopener noreferrer"
