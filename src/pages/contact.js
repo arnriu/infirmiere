@@ -52,6 +52,7 @@ const Contact = () => (
                   <input
                     class="form-control"
                     id="nom"
+                    name="nom"
                     placeholder="Entrez votre nom..."
                   />
                 </div>
@@ -63,6 +64,7 @@ const Contact = () => (
                     type="email"
                     class="form-control"
                     id="mail"
+                    name="mail"
                     placeholder="Votre adresse e-mail..."
                   />
                 </div>
@@ -73,7 +75,7 @@ const Contact = () => (
                   <label htmlFor="soins" class="form-label text-uppercase">
                     Type de soins
                   </label>
-                  <select class="form-select" id="soins">
+                  <select class="form-select" id="soins" name="soins">
                     <option value="pansement" selected>
                       Pansement
                     </option>
@@ -97,6 +99,7 @@ const Contact = () => (
                   <input
                     class="form-control"
                     id="ville"
+                    name="ville"
                     placeholder="Votre ville..."
                   />
                 </div>
@@ -110,6 +113,7 @@ const Contact = () => (
                   <textarea
                     class="form-control"
                     id="message"
+                    name="message"
                     rows="4"
                     placeholder="Décrivez l'objet de votre demande..."
                     style={{ resize: 'none' }}
