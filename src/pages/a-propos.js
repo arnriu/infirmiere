@@ -5,6 +5,9 @@ import Accordion from 'react-bootstrap/Accordion'
 
 import Layout from '../components/Layout'
 
+import Stars from '../assets/svg/inline/stars.svg'
+import Pattern from '../assets/svg/inline/pattern.svg'
+
 const APropos = () => (
   <Layout pageColor="red">
     <section className="mb-5">
@@ -26,7 +29,7 @@ const APropos = () => (
               <div className="col-5 offset-2 position-relative">
                 <StaticImage
                   className="rounded-5"
-                  src="../images/caroline.jpg"
+                  src="../assets/images/caroline.jpg"
                   alt=""
                   placeholder="blurred"
                   style={{ height: 400 }}
@@ -37,7 +40,7 @@ const APropos = () => (
                 >
                   <div className="contact-icon me-3">
                     <StaticImage
-                      src="../images/oni.jpg"
+                      src="../assets/images/oni.jpg"
                       placeholder="blurred"
                     />
                   </div>
@@ -50,20 +53,17 @@ const APropos = () => (
                 </div>
               </div>
               <div className="col mt-5 position-relative">
-                <StaticImage
-                  src="../images/pattern.svg"
-                  alt=""
-                  placeholder="tracedSVG"
+                <Pattern
+                  width="144"
                   style={{
                     position: 'absolute',
                     bottom: '-.5rem',
-                    right: '-.5rem',
-                    width: 144
+                    right: '-.5rem'
                   }}
                 />
                 <StaticImage
                   className="rounded-5"
-                  src="../images/woman-patient-dentist.jpg"
+                  src="../assets/images/woman-patient-dentist.jpg"
                   alt=""
                   placeholder="blurred"
                   style={{ height: 400 }}
@@ -102,7 +102,7 @@ const APropos = () => (
             >
               <StaticImage
                 className="rounded-5 border w-100 mb-3"
-                src="../images/healthcare.jpg"
+                src="../assets/images/healthcare.jpg"
                 alt=""
                 style={{ height: 300 }}
                 placeholder="blurred"
@@ -121,7 +121,7 @@ const APropos = () => (
             >
               <StaticImage
                 className="rounded-5 border w-100 mb-3"
-                src="../images/aphp.jpg"
+                src="../assets/images/aphp.jpg"
                 alt=""
                 style={{ height: 300 }}
                 placeholder="blurred"
@@ -142,7 +142,7 @@ const APropos = () => (
             >
               <StaticImage
                 className="rounded-5 border w-100 mb-3"
-                src="../images/curie.jpg"
+                src="../assets/images/curie.jpg"
                 alt=""
                 style={{ height: 300 }}
                 placeholder="blurred"
@@ -343,7 +343,7 @@ const APropos = () => (
               <div className="card-img-top card-review-img text-center">
                 <StaticImage
                   className="rounded-circle"
-                  src="../images/image_24.jpg"
+                  src="../assets/images/SoniaDo.png"
                   alt=""
                   placeholder="blurred"
                 />
@@ -352,29 +352,25 @@ const APropos = () => (
                 <div className="card-title mb-2">
                   <strong>Sonia Do</strong>
                 </div>
-                <p className="card-text mb-4">
+                <p className="card-text mb-1">
                   Très sérieuse!
                   <br />
                   Caroline est très compétente et agréable.
                   <br />
                   Merci pour tout.
                 </p>
-                <div className="review-stars">
-                  <StaticImage
-                    src="../images/stars.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
-                </div>
+              </div>
+              <div className="align-self-center review-stars mb-3">
+                <Stars />
               </div>
             </div>
           </div>
           <div className="col">
-            <div className="card h-100 border-0 review rounded-5">
+            <div className="card h-100 border-0 review rounded-5 pb-4">
               <div className="card-img-top card-review-img text-center">
                 <StaticImage
                   className="rounded-circle"
-                  src="../images/image_25.jpg"
+                  src="../assets/images/Melysande.png"
                   alt=""
                   placeholder="blurred"
                 />
@@ -383,27 +379,23 @@ const APropos = () => (
                 <div className="card-title mb-2">
                   <strong>Melysande</strong>
                 </div>
-                <p className="card-text mb-4">
+                <p className="card-text mb-1">
                   Caroline est une infirmière douce, patiente et souriante. Elle
                   s’est occupée de mon fils de sa naissance jusqu’à ses 6 mois.
                   Merci !
                 </p>
-                <div className="review-stars">
-                  <StaticImage
-                    src="../images/stars.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
-                </div>
+              </div>
+              <div className="align-self-center review-stars mb-3">
+                <Stars />
               </div>
             </div>
           </div>
           <div className="col">
-            <div className="card h-100 border-0 review rounded-5">
+            <div className="card h-100 border-0 review rounded-5 pb-4">
               <div className="card-img-top card-review-img text-center">
                 <StaticImage
                   className="rounded-circle"
-                  src="../images/image_26.jpg"
+                  src="../assets/images/MadSauvegarde.png"
                   alt=""
                   placeholder="blurred"
                 />
@@ -412,17 +404,13 @@ const APropos = () => (
                 <div className="card-title mb-2">
                   <strong>Mad Sauvegarde</strong>
                 </div>
-                <p className="card-text mb-4">
+                <p className="card-text mb-1">
                   Caroline est arrivée en moins d’une heure après mon appel.
                   Très efficace et professionelle, je recommande plus que tout !
                 </p>
-                <div className="review-stars">
-                  <StaticImage
-                    src="../images/stars.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
-                </div>
+              </div>
+              <div className="align-self-center review-stars mb-3">
+                <Stars />
               </div>
             </div>
           </div>

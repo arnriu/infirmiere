@@ -1,16 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+
+import Logo from '../assets/svg/inline/LOGO-CJS.svg'
 
 const Header = ({ pageColor }) => (
   <header className="navbar py-4">
     <nav className="container">
       <Link className="navbar-brand" to="/">
-        <StaticImage
-          src="../images/logo.png"
-          alt="Accueil"
-          placeholder="tracedSVG"
-        />
+        <Logo width="204" />
       </Link>
       <ul className="navbar-nav flex-row">
         <li className="nav-item">

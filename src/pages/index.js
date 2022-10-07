@@ -4,6 +4,20 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
 
+import Home from '../assets/svg/inline/home.svg'
+import Pansement from '../assets/svg/inline/pansement.svg'
+import Seringue from '../assets/svg/inline/seringue.svg'
+import Perfusion from '../assets/svg/inline/perfusion.svg'
+import Pills from '../assets/svg/inline/pills.svg'
+import Time from '../assets/svg/inline/time.svg'
+import Virus from '../assets/svg/inline/virus.svg'
+import Larynx from '../assets/svg/inline/larynx.svg'
+import Douche from '../assets/svg/inline/douche.svg'
+import Check from '../assets/svg/inline/check.svg'
+import Hands from '../assets/svg/inline/hands.svg'
+import Caducet from '../assets/svg/inline/caducet.svg'
+import HeartHands from '../assets/svg/inline/heart_hands.svg'
+
 const IndexPage = () => (
   <Layout pageColor="green">
     <section className="mb-3">
@@ -30,11 +44,7 @@ const IndexPage = () => (
           </div>
           <div className="col">
             <div className="home-image">
-              <StaticImage
-                src="../images/home.svg"
-                alt=""
-                placeholder="tracedSVG"
-              />
+              <Home />
             </div>
           </div>
         </div>
@@ -83,11 +93,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <StaticImage
-                    src="../images/pansement.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
+                  <Pansement />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -103,11 +109,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <StaticImage
-                    src="../images/seringue.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
+                  <Seringue />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -125,11 +127,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <StaticImage
-                    src="../images/perfusion.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
+                  <Perfusion />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -145,11 +143,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <StaticImage
-                    src="../images/pills.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
+                  <Pills />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -168,11 +162,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <StaticImage
-                    src="../images/time.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
+                  <Time />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -188,11 +178,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <StaticImage
-                    src="../images/virus.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
+                  <Virus />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -207,11 +193,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <StaticImage
-                    src="../images/larynx.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
+                  <Larynx />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -227,11 +209,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <StaticImage
-                    src="../images/douche.svg"
-                    alt=""
-                    placeholder="tracedSVG"
-                  />
+                  <Douche />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -253,7 +231,7 @@ const IndexPage = () => (
             <div className="cropped-bg-img bg-green-100 ps-5 py-5 rounded-4 w-50">
               <StaticImage
                 className="rounded-4"
-                src="../images/patient-receiving-dental-treatment.png"
+                src="../assets/images/patient-receiving-dental-treatment.png"
                 alt=""
                 placeholder="blurred"
               />
@@ -324,11 +302,7 @@ const IndexPage = () => (
               <div className="col">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
-                    <StaticImage
-                      src="../images/check.svg"
-                      alt=""
-                      placeholder="tracedSVG"
-                    />
+                    <Check />
                   </div>
                   <div className="ms-2">
                     <h5>
@@ -344,11 +318,7 @@ const IndexPage = () => (
               <div className="col">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
-                    <StaticImage
-                      src="../images/hands.svg"
-                      alt=""
-                      placeholder="tracedSVG"
-                    />
+                    <Hands />
                   </div>
                   <div className="ms-2">
                     <h5>
@@ -370,11 +340,7 @@ const IndexPage = () => (
               <div className="col">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
-                    <StaticImage
-                      src="../images/caducet.svg"
-                      alt=""
-                      placeholder="tracedSVG"
-                    />
+                    <Caducet />
                   </div>
                   <div className="ms-2">
                     <h5>
@@ -390,11 +356,7 @@ const IndexPage = () => (
               <div className="col">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
-                    <StaticImage
-                      src="../images/heart_hands.svg"
-                      alt=""
-                      placeholder="tracedSVG"
-                    />
+                    <HeartHands />
                   </div>
                   <div className="ms-2">
                     <h5>
@@ -434,7 +396,7 @@ const IndexPage = () => (
           <div className="col-5">
             <StaticImage
               className="rounded-5 w-100"
-              src="../images/image_31.jpg"
+              src="../assets/images/image_31.jpg"
               alt=""
               style={{ height: 300 }}
               placeholder="blurred"
@@ -443,7 +405,7 @@ const IndexPage = () => (
           <div className="col-3">
             <StaticImage
               className="rounded-5 w-100"
-              src="../images/image_36.jpg"
+              src="../assets/images/image_36.jpg"
               alt=""
               style={{ height: 300 }}
               placeholder="blurred"
@@ -452,7 +414,7 @@ const IndexPage = () => (
           <div className="col-4">
             <StaticImage
               className="rounded-5 w-100"
-              src="../images/image_34.jpg"
+              src="../assets/images/image_34.jpg"
               alt=""
               style={{ height: 300 }}
               placeholder="blurred"
@@ -464,7 +426,7 @@ const IndexPage = () => (
           <div className="col-3">
             <StaticImage
               className="rounded-5 w-100"
-              src="../images/image_35.jpg"
+              src="../assets/images/image_35.jpg"
               alt=""
               style={{ height: 300 }}
               placeholder="blurred"
@@ -473,7 +435,7 @@ const IndexPage = () => (
           <div className="col-4">
             <StaticImage
               className="rounded-5 w-100"
-              src="../images/image_33.jpg"
+              src="../assets/images/image_33.jpg"
               alt=""
               style={{ height: 300 }}
               placeholder="blurred"
@@ -482,7 +444,7 @@ const IndexPage = () => (
           <div className="col-5">
             <StaticImage
               className="rounded-5 w-100"
-              src="../images/image_32.jpg"
+              src="../assets/images/image_32.jpg"
               alt=""
               style={{ height: 300 }}
               placeholder="blurred"

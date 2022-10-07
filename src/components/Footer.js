@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+
+import LogoWhite from '../assets/svg/inline/LOGO-CJS-WHITE.svg'
+import Calling from '../assets/svg/inline/calling.svg'
+import Mail from '../assets/svg/inline/mail.svg'
+import Location from '../assets/svg/inline/location.svg'
 
 const Footer = () => (
   <footer className="bg-dark pt-5">
@@ -8,7 +12,7 @@ const Footer = () => (
       <div className="row mt-3 mb-5">
         <div className="col-6 pe-5">
           <Link className="navbar-brand" to="/">
-            <StaticImage src="../images/logo_white.png" alt="Accueil" />
+            <LogoWhite width="204" />
           </Link>
 
           <div className="text-footer fw-bold mt-3">
@@ -51,10 +55,7 @@ const Footer = () => (
                 <li className="nav-item mb-4">
                   <div className="d-flex align-items-center">
                     <div className="footer-icon me-3">
-                      <StaticImage
-                        src="../images/calling.svg"
-                        placeholder="tracedSVG"
-                      />
+                      <Calling />
                     </div>
                     <div className="fw-bold">
                       <div className="text-footer">Téléphone</div>
@@ -67,10 +68,7 @@ const Footer = () => (
                 <li className="nav-item mb-4">
                   <div className="d-flex align-items-center">
                     <div className="footer-icon me-3">
-                      <StaticImage
-                        src="../images/mail.svg"
-                        placeholder="tracedSVG"
-                      />
+                      <Mail />
                     </div>
                     <div className="fw-bold">
                       <div className="text-footer">E-mail</div>
@@ -86,10 +84,7 @@ const Footer = () => (
                 <li className="nav-item">
                   <div className="d-flex align-items-center">
                     <div className="footer-icon me-3">
-                      <StaticImage
-                        src="../images/location.svg"
-                        placeholder="tracedSVG"
-                      />
+                      <Location />
                     </div>
                     <div className="fw-bold">
                       <div className="text-footer">Adresse</div>

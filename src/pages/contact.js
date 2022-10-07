@@ -3,6 +3,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
 
+import CallingWhite from '../assets/svg/inline/calling_white.svg'
+
 const Contact = () => (
   <Layout pageColor="purple">
     <section className="mb-5">
@@ -28,8 +30,14 @@ const Contact = () => (
           </div>
         </div>
       </div>
-      
-      <form className="container pb-5">
+
+      <form
+        className="container pb-5"
+        method="post"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
+        name="contact"
+      >
         <div className="row">
           <div className="contact-form col-8 offset-2 bg-white p-5 rounded-5">
             <div className="px-4">
@@ -66,6 +74,17 @@ const Contact = () => (
                     <option value="pansement" selected>
                       Pansement
                     </option>
+                    <option value="injections-prélèvements">
+                      Injections / Prélèvements
+                    </option>
+                    <option value="perfusions">Perfusions</option>
+                    <option value="traitements">Traitements</option>
+                    <option value="pathologies-chroniques">
+                      Pathologies chroniques
+                    </option>
+                    <option value="covid-19">COVID-19</option>
+                    <option value="soins-de-stomie">Soins de stomie</option>
+                    <option value="hygiène-confort">Hygiène et confort</option>
                   </select>
                 </div>
                 <div className="col">
@@ -99,10 +118,7 @@ const Contact = () => (
                 <div className="col">
                   <div className="d-flex align-items-center">
                     <div className="contact-icon me-3">
-                      <StaticImage
-                        src="../images/calling_white.svg"
-                        placeholder="tracedSVG"
-                      />
+                      <CallingWhite />
                     </div>
                     <div className="fw-bold">
                       <div className="text-purple">En cas d'urgence</div>
@@ -151,7 +167,7 @@ const Contact = () => (
                     <div className="col-7">
                       <StaticImage
                         className="img-border-left mt-4 ms-4"
-                        src="../images/image_40.jpg"
+                        src="../assets/images/image_40.jpg"
                         alt=""
                         style={{ height: 410 }}
                         placeholder="blurred"
@@ -160,7 +176,7 @@ const Contact = () => (
                     <div className="col-5">
                       <StaticImage
                         className="img-border-right mt-4 me-4"
-                        src="../images/map.jpg"
+                        src="../assets/images/map.jpg"
                         alt=""
                         style={{ height: 410 }}
                         placeholder="blurred"
