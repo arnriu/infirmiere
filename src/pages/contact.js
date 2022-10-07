@@ -38,6 +38,9 @@ const Contact = () => (
         data-netlify="true"
         name="contact"
       >
+        <input type="hidden" name="bot-field" />
+        <input type="hidden" name="form-name" value="contact" />
+
         <div className="row">
           <div className="contact-form col-8 offset-2 bg-white p-5 rounded-5">
             <div className="px-4">
@@ -129,7 +132,9 @@ const Contact = () => (
                   </div>
                 </div>
                 <div className="col">
-                  <button className="btn btn-purple w-100">Prendre RDV</button>
+                  <button type="submit" className="btn btn-purple w-100">
+                    Prendre RDV
+                  </button>
                 </div>
               </div>
             </div>
