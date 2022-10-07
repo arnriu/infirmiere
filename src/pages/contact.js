@@ -80,7 +80,10 @@ const Contact = () => {
           <input type="hidden" name="form-name" value="contact" />
 
           <div className="row">
-            <div className="contact-form col-8 offset-2 bg-white p-5 rounded-5">
+            <div
+              className="contact-form col-8 offset-2 bg-white p-5 rounded-5"
+              id="formulaire"
+            >
               <div className="px-4">
                 <div className="row mb-4">
                   <div className="col">

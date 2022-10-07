@@ -38,7 +38,7 @@ const Header = ({ pageColor }) => (
           </Link>
         </li>
       </ul>
-      <a href="/contact" className={`btn btn-${pageColor}`}>
+      <a href="/contact#formulaire" className={`btn btn-${pageColor}`}>
         Prendre RDV
       </a>
     </nav>

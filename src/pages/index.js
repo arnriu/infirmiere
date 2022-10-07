@@ -38,7 +38,7 @@ const IndexPage = () => (
             <Link className="btn btn-green me-5" to="/a-propos">
               En savoir plus
             </Link>
-            <Link className="btn btn-green" to="/contact">
+            <Link className="btn btn-green" to="/contact#formulaire">
               Prendre RDV
             </Link>
           </div>
@@ -262,7 +262,7 @@ const IndexPage = () => (
             </div>
             <div className="row">
               <div className="col">
-                <Link className="btn btn-green" to="/contact">
+                <Link className="btn btn-green" to="/contact#formulaire">
                   Prendre RDV
                 </Link>
               </div>
