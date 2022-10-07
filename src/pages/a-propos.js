@@ -35,13 +35,14 @@ const APropos = () => (
                   style={{ height: 400 }}
                 />
                 <div
-                  className="d-flex align-items-center position-absolute bg-white rounded-4 p-2"
+                  className="d-flex align-items-center position-absolute bg-white rounded-4 ps-2 py-2 pe-3"
                   style={{ transform: 'translate(-40%, -50%)' }}
                 >
-                  <div className="contact-icon me-3">
+                  <div className="me-3">
                     <StaticImage
                       src="../assets/images/oni.jpg"
                       placeholder="blurred"
+                      style={{ width: 70 }}
                     />
                   </div>
                   <div>
@@ -92,7 +93,7 @@ const APropos = () => (
           </div>
         </div>
 
-        <div className="row">
+        <div className="row g-5">
           <div className="col">
             <a
               className="nav-link"
@@ -104,8 +105,11 @@ const APropos = () => (
                 className="rounded-5 border w-100 mb-3"
                 src="../assets/images/healthcare.jpg"
                 alt=""
-                style={{ height: 300 }}
                 placeholder="blurred"
+                layout="fullWidth"
+                aspectRatio={5 / 4}
+                backgroundColor="white"
+                transformOptions={{ fit: 'contain' }}
               />
               <h5 className="text-dark text-center fw-bold">
                 Fondation A. de Rothschild, Paris Ophtalmologie
@@ -123,8 +127,11 @@ const APropos = () => (
                 className="rounded-5 border w-100 mb-3"
                 src="../assets/images/aphp.jpg"
                 alt=""
-                style={{ height: 300 }}
                 placeholder="blurred"
+                layout="fullWidth"
+                aspectRatio={5 / 4}
+                backgroundColor="white"
+                transformOptions={{ fit: 'contain' }}
               />
               <h5 className="text-dark text-center fw-bold">
                 Assistance publique, Hôpitaux de Paris
@@ -142,10 +149,13 @@ const APropos = () => (
             >
               <StaticImage
                 className="rounded-5 border w-100 mb-3"
-                src="../assets/images/curie.jpg"
+                src="../assets/images/curie.png"
                 alt=""
-                style={{ height: 300 }}
                 placeholder="blurred"
+                layout="fullWidth"
+                aspectRatio={5 / 4}
+                backgroundColor="white"
+                transformOptions={{ fit: 'contain' }}
               />
               <h5 className="text-dark text-center fw-bold">
                 Institut Curie Paris
@@ -457,8 +467,8 @@ const APropos = () => (
                   possible ?
                 </Accordion.Header>
                 <Accordion.Body>
-                  Oui bien sûr, je peux faire tout type de soins à de patients
-                  âgés de quelques jours à 120 ans.
+                  Oui bien sûr, je peux faire tout type de soins à une
+                  patientèle âgée de quelques jours à 120 ans.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">
