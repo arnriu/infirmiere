@@ -95,15 +95,15 @@ const Contact = () => {
                     />
                   </div>
                   <div className="col">
-                    <label htmlFor="mail" className="form-label text-uppercase">
-                      E-mail
+                    <label htmlFor="tel" className="form-label text-uppercase">
+                      Téléphone
                     </label>
                     <input
-                      type="email"
+                      type="tel"
                       className="form-control"
-                      id="mail"
-                      name="mail"
-                      placeholder="Votre adresse e-mail..."
+                      id="tel"
+                      name="tel"
+                      placeholder="Votre numéro de téléphone..."
                     />
                   </div>
                 </div>
