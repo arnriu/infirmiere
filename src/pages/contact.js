@@ -10,7 +10,7 @@ import CheckPurple from '../assets/svg/inline/check_purple.svg'
 const Contact = () => {
   const location = useLocation()
   const [success, setSuccess] = useState(false)
-  const [endAnim, setEndAnim] = useState(false)
+  const [endAnim, setEndAnim] = useState(true)
 
   useEffect(() => {
     if (location.search === '?success') {
