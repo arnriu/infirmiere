@@ -159,7 +159,7 @@ const Contact = () => {
                 </div>
 
                 <div className="row mb-5">
-                  <div className="col-12 col-lg-6">
+                  <div className="col-12">
                     <label
                       htmlFor="message"
                       className="form-label text-uppercase"
@@ -178,7 +178,7 @@ const Contact = () => {
                 </div>
 
                 <div className="row mb-4">
-                  <div className="col-12 col-lg-6 mb-4 mb-lg-0">
+                  <div className="col-12 col-lg-6 order-2 order-lg-0">
                     <div className="d-flex align-items-center">
                       <div className="contact-icon me-3">
                         <CallingWhite />
@@ -191,9 +191,9 @@ const Contact = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 col-lg-6">
+                  <div className="col-12 col-lg-6 mb-4 mb-lg-0">
                     <button type="submit" className="btn btn-purple w-100">
-                      Prendre RDV
+                      Envoyer
                     </button>
                   </div>
                 </div>

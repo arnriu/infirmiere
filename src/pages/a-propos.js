@@ -151,7 +151,7 @@ const APropos = () => (
             >
               <StaticImage
                 className="rounded-5 border w-100 mb-3"
-                src="../assets/images/curie.png"
+                src="../assets/images/curie.jpg"
                 alt=""
                 placeholder="blurred"
                 layout="fullWidth"

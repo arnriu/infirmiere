@@ -92,6 +92,7 @@ const Header = ({ pageColor }) => {
             <a
               href="/contact#formulaire"
               className={`btn offcanvas-btn-${pageColor} d-lg-none w-100 mt-5`}
+              onClick={handleNavbar}
             >
               Prendre RDV
             </a>
