@@ -10,6 +10,10 @@
     height: 4.5rem
     padding: .5rem
 
+    @include media-breakpoint-down(lg)
+        width: 3.5rem
+        height: 3.5rem
+
     &::before
         content: ''
         display: block
@@ -21,6 +25,9 @@
         border-radius: 1rem
         border: 2px solid $white
         background: rgba($white, .2)
+
+        @include media-breakpoint-down(lg)
+            height: 5rem
 
 .card-review-img
     position: relative

@@ -44,11 +44,12 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <section className="mb-5">
+
+      <section className="mb-0 mb-lg-5">
         <div className="container hero hero-header hero-contact">
           <div className="row">
             <div className="col text-center">
-              <h1 className="mb-4">Contact</h1>
+              <h1 className="display-1 fw-bold mb-4">Contact</h1>
             </div>
           </div>
           <div className="row">
@@ -81,12 +82,12 @@ const Contact = () => {
 
           <div className="row">
             <div
-              className="contact-form col-8 offset-2 bg-white p-5 rounded-5"
+              className="contact-form col-12 col-lg-8 offset-lg-2 bg-white py-4 p-lg-5 rounded-5"
               id="formulaire"
             >
               <div className="px-4">
                 <div className="row mb-4">
-                  <div className="col">
+                  <div className="col-12 col-lg-6 mb-4 mb-lg-0">
                     <label htmlFor="nom" className="form-label text-uppercase">
                       Nom / Prénom
                     </label>
@@ -97,7 +98,7 @@ const Contact = () => {
                       placeholder="Entrez votre nom..."
                     />
                   </div>
-                  <div className="col">
+                  <div className="col-12 col-lg-6">
                     <label htmlFor="tel" className="form-label text-uppercase">
                       Téléphone
                     </label>
@@ -112,7 +113,7 @@ const Contact = () => {
                 </div>
 
                 <div className="row mb-4">
-                  <div className="col">
+                  <div className="col-12 col-lg-6 mb-4 mb-lg-0">
                     <label
                       htmlFor="soins"
                       className="form-label text-uppercase"
@@ -141,7 +142,7 @@ const Contact = () => {
                       </option>
                     </select>
                   </div>
-                  <div className="col">
+                  <div className="col-12 col-lg-6">
                     <label
                       htmlFor="ville"
                       className="form-label text-uppercase"
@@ -158,7 +159,7 @@ const Contact = () => {
                 </div>
 
                 <div className="row mb-5">
-                  <div className="col">
+                  <div className="col-12 col-lg-6">
                     <label
                       htmlFor="message"
                       className="form-label text-uppercase"
@@ -177,7 +178,7 @@ const Contact = () => {
                 </div>
 
                 <div className="row mb-4">
-                  <div className="col">
+                  <div className="col-12 col-lg-6 mb-4 mb-lg-0">
                     <div className="d-flex align-items-center">
                       <div className="contact-icon me-3">
                         <CallingWhite />
@@ -190,7 +191,7 @@ const Contact = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col">
+                  <div className="col-12 col-lg-6">
                     <button type="submit" className="btn btn-purple w-100">
                       Prendre RDV
                     </button>
@@ -202,7 +203,7 @@ const Contact = () => {
         </form>
       </section>
 
-      <section className="mb-5">
+      <section className="mb-lg-5">
         <div className="container">
           <div className="row mb-3">
             <div className="col text-center">
@@ -212,13 +213,15 @@ const Contact = () => {
             </div>
           </div>
           <div className="row mb-4">
-            <div className="col-6 offset-3 text-center">
-              <h2>Cabinet ouvert le mardi et le jeudi sur rendez-vous</h2>
+            <div className="col-12 col-lg-6 offset-lg-3 text-lg-center">
+              <h2 className="display-2 fw-bold">
+                Cabinet ouvert le mardi et le jeudi sur rendez-vous
+              </h2>
             </div>
           </div>
 
           <div className="row pb-5">
-            <div className="col-8 offset-2">
+            <div className="col-12 col-lg-8 offset-lg-2">
               <a
                 className="nav-link contact-map"
                 href="https://maps.google.com/maps/dir//19+Pl.+des+Vosges+56860+S%C3%A9n%C3%A9/@47.6503169,-2.72102,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x48101de107715771:0x48c56ad24484755"
@@ -227,8 +230,8 @@ const Contact = () => {
               >
                 <div className="card rounded-5">
                   <div className="card-img-top mb-4">
-                    <div className="row g-0">
-                      <div className="col-7">
+                    <div className="row g-3">
+                      <div className="d-none d-lg-block col-7">
                         <StaticImage
                           className="img-border-left mt-4 ms-4"
                           src="../assets/images/image_40.jpg"
@@ -237,9 +240,9 @@ const Contact = () => {
                           placeholder="blurred"
                         />
                       </div>
-                      <div className="col-5">
+                      <div className="col-12 col-lg-5">
                         <StaticImage
-                          className="img-border-right mt-4 me-4"
+                          className="img-border-right mt-4 mx-4 ms-lg-0"
                           src="../assets/images/map.jpg"
                           alt=""
                           style={{ height: 410 }}

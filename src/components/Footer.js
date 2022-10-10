@@ -7,11 +7,14 @@ import Mail from '../assets/svg/inline/mail.svg'
 import Location from '../assets/svg/inline/location.svg'
 
 const Footer = () => (
-  <footer className="bg-dark pt-5">
+  <footer className="bg-dark pt-4 pt-lg-5">
     <nav className="container">
       <div className="row mt-3 mb-5">
-        <div className="col-6 pe-5">
-          <Link className="navbar-brand" to="/">
+        <div className="col-12 col-lg-6 pe-lg-5 mb-5 mb-lg-0">
+          <Link
+            className="navbar-brand d-flex d-lg-block justify-content-center"
+            to="/"
+          >
             <LogoWhite width="204" />
           </Link>
 
@@ -21,9 +24,9 @@ const Footer = () => (
           </div>
         </div>
 
-        <div className="col-6">
+        <div className="col-12 col-lg-6">
           <div className="row">
-            <div className="col-4">
+            <div className="col-12 col-lg-4 mb-5 mb-lg-0">
               <small className="d-block text-footer text-uppercase fw-bold mb-3">
                 Navigation
               </small>
@@ -46,7 +49,7 @@ const Footer = () => (
               </ul>
             </div>
 
-            <div className="col-8">
+            <div className="col-12 col-lg-8">
               <small className="d-block text-footer text-uppercase fw-bold mb-4">
                 Contact & information
               </small>

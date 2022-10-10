@@ -1,26 +1,22 @@
-.nav-link
-    position: relative
-    color: $dark
-
-    &:hover
-        color: $gray-800
-        text-decoration: underline
-
-    &.active
-        &::after
-            content: ''
-            display: block
-            position: absolute
-            bottom: 0
-            left: 3rem
-            right: 3rem
-            height: 2px
-            border-radius: 2px
-
-header
+.navbar-nav
     .nav-link
+        position: relative
+        color: $dark
+
+        @include media-breakpoint-down(lg)
+            color: $white
+
         &:hover
-            text-decoration: none
+            color: $gray-800
+            text-decoration: underline
+
+            @include media-breakpoint-down(lg)
+                color: $white
+
+        &.active
+            @include media-breakpoint-down(lg)
+                color: $white
+                text-decoration: underline
 
             &::after
                 content: ''
@@ -32,15 +28,41 @@ header
                 height: 2px
                 border-radius: 2px
 
+                @include media-breakpoint-down(lg)
+                    display: none
+
+header
+    .navbar-nav
+        .nav-link
+            &:hover
+                text-decoration: none
+
+                &::after
+                    content: ''
+                    display: block
+                    position: absolute
+                    bottom: 0
+                    left: 3rem
+                    right: 3rem
+                    height: 2px
+                    border-radius: 2px
+
+            @include media-breakpoint-down(lg)
+                font-weight: normal !important
+
+                &.active
+                    font-weight: bold !important
+
 footer
-    .nav-link
-        color: $white
-
-        &:hover
-            color: $gray-300
-
-        &:active, &:focus
+    .navbar-nav
+        .nav-link
             color: $white
+
+            &:hover
+                color: $gray-300
+
+            &:active, &:focus
+                color: $white
 
 .green
     .nav-link

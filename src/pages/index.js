@@ -24,7 +24,7 @@ const IndexPage = () => (
       <div className="container hero hero-header hero-home">
         <div className="row">
           <div className="col-12 col-lg-6">
-            <h1 className="mb-4">Infirmière Libérale</h1>
+            <h1 className="display-1 fw-bold mb-4">Infirmière Libérale</h1>
             <p className="mb-5">
               Bonjour, je suis Caroline !<br />
               <br />
@@ -35,12 +35,20 @@ const IndexPage = () => (
               Depuis 4 ans maintenant, je me déplace au domicile des patients
               pour prodiguer leurs soins.
             </p>
-            <Link className="btn btn-green me-5" to="/a-propos">
-              En savoir plus
-            </Link>
-            <Link className="btn btn-green" to="/contact#formulaire">
-              Prendre RDV
-            </Link>
+            <div className="d-flex d-lg-block flex-column align-items-center">
+              <Link
+                className="btn btn-green mb-3 mb-lg-0 mx-auto me-lg-5"
+                to="/a-propos"
+              >
+                En savoir plus
+              </Link>
+              <Link
+                className="btn btn-green mb-3 mb-lg-0 mx-auto me-lg-5"
+                to="/contact#formulaire"
+              >
+                Prendre RDV
+              </Link>
+            </div>
           </div>
           <div className="col">
             <div className="home-image">
@@ -51,11 +59,11 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="py-5">
+    <section className="py-4 py-lg-5">
       <div className="container">
         <div className="row">
           <div className="col">
-            <p className="quote text-center px-5 fs-2 pb-5">
+            <p className="quote text-center fs-2 px-3 px-lg-5 pb-5">
               “En tant qu'infirmière, nous avons la possibilité de guérir le
               cœur, l'esprit, l'âme et le corps de nos patients, de leurs
               familles et de nous-mêmes. Ils peuvent oublier votre nom, mais ils
@@ -74,24 +82,24 @@ const IndexPage = () => (
           </strong>
         </div>
         <div className="row mb-5">
-          <div className="col">
-            <h2>
+          <div className="col-12 col-lg-6 mb-3 mb-lg-0">
+            <h2 className="display-2 fw-bold">
               N'ayez plus peur
               <br />
               de guérir
             </h2>
           </div>
-          <div className="col text-secondary">
+          <div className="col-12 col-lg-6 text-secondary">
             Conventionnée Assurance Maladie, AME, CSS, CMU, toutes mutuelles.
             100% prise en charge par la sécurité sociale et votre complémentaire
             santé sans avance de frais.
           </div>
         </div>
 
-        <div className="row mb-4">
-          <div className="col">
+        <div className="row mb-0 mb-lg-4">
+          <div className="col-12 col-lg-3 mb-3 mb-lg-0">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <Pansement />
                 </div>
@@ -105,9 +113,9 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-3 mb-lg-0">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <Seringue />
                 </div>
@@ -123,9 +131,9 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-3 mb-lg-0">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <Perfusion />
                 </div>
@@ -139,9 +147,9 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-3 mb-lg-0">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <Pills />
                 </div>
@@ -158,9 +166,9 @@ const IndexPage = () => (
         </div>
 
         <div className="row">
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-3 mb-lg-0">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <Time />
                 </div>
@@ -174,9 +182,9 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-3 mb-lg-0">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <Virus />
                 </div>
@@ -189,9 +197,9 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-3 mb-lg-0">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <Larynx />
                 </div>
@@ -205,9 +213,9 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-3 mb-lg-0">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <Douche />
                 </div>
@@ -224,10 +232,10 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="py-5">
+    <section className="py-4 py-lg-5">
       <div className="container">
         <div className="row align-items-center">
-          <div className="col">
+          <div className="col-12 col-lg-6 mb-3 mb-lg-0">
             <div className="cropped-bg-img bg-green-100 ps-5 py-5 rounded-4 w-50">
               <StaticImage
                 className="rounded-4"
@@ -245,7 +253,7 @@ const IndexPage = () => (
             </div>
             <div className="row mb-3">
               <div className="col">
-                <h2>Spécialité pédiatrique</h2>
+                <h2 className="display-2 fw-bold">Spécialité pédiatrique</h2>
               </div>
             </div>
             <div className="row mb-4">
@@ -273,9 +281,9 @@ const IndexPage = () => (
     </section>
 
     <section className="mb-3">
-      <div className="container hero py-5">
+      <div className="container hero py-4 py-lg-5">
         <div className="row mt-4 mb-5">
-          <div className="col-10 offset-1">
+          <div className="col-12 col-xxl-10 offset-xxl-1">
             <div className="row mb-3">
               <strong className="text-green text-uppercase text-badge">
                 Services
@@ -283,11 +291,13 @@ const IndexPage = () => (
             </div>
             <div className="row mb-3">
               <div className="col">
-                <h2>L’assurance d’être entre de bonnes mains</h2>
+                <h2 className="display-2 fw-bold">
+                  L’assurance d’être entre de bonnes mains
+                </h2>
               </div>
             </div>{' '}
             <div className="row">
-              <div className="col-8 text-secondary">
+              <div className="col-12 col-lg-8 text-secondary">
                 J’appréhende intuitivement le « prendre soin » comme le cœur de
                 mon métier et je me le représente idéalement comme généreux et
                 bienveillant.
@@ -297,9 +307,9 @@ const IndexPage = () => (
         </div>
 
         <div className="row">
-          <div className="col-10 offset-1">
+          <div className="col-12 col-xxl-10 offset-xxl-1">
             <div className="row mb-4">
-              <div className="col">
+              <div className="col mb-4 mb-lg-0">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
                     <Check />
@@ -337,7 +347,7 @@ const IndexPage = () => (
             </div>
 
             <div className="row mb-5">
-              <div className="col">
+              <div className="col mb-4 mb-lg-0">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
                     <Caducet />
@@ -375,7 +385,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="py-5">
+    <section className="py-4 py-lg-5">
       <div className="container">
         <div className="row mb-3">
           <strong className="text-green text-uppercase text-badge">
@@ -383,17 +393,17 @@ const IndexPage = () => (
           </strong>
         </div>
         <div className="row mb-5">
-          <div className="col">
-            <h2>La preuve en images...</h2>
+          <div className="col-12 col-lg-6">
+            <h2 className="display-2 fw-bold">La preuve en images...</h2>
           </div>
-          <div className="col text-secondary">
+          <div className="col-12 col-lg-6 text-secondary">
             Chaque jour et une aventure innoubliable pour mes patients comme
             pour moi. Nous n’oublierons jamais ces séjours thérapeutiques à
             Quiberon, ou les soins exercés sur un bateau près de la Teignouse...
           </div>
         </div>
-        <div className="row mb-4">
-          <div className="col-5">
+        <div className="row mb-5">
+          <div className="col-6 col-lg-5 mb-4">
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_31.jpg"
@@ -402,7 +412,7 @@ const IndexPage = () => (
               placeholder="blurred"
             />
           </div>
-          <div className="col-3">
+          <div className="col-6 col-lg-3 mb-4">
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_36.jpg"
@@ -411,7 +421,7 @@ const IndexPage = () => (
               placeholder="blurred"
             />
           </div>
-          <div className="col-4">
+          <div className="col-6 col-lg-4 mb-4">
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_34.jpg"
@@ -420,10 +430,8 @@ const IndexPage = () => (
               placeholder="blurred"
             />
           </div>
-        </div>
 
-        <div className="row mb-5">
-          <div className="col-3">
+          <div className="col-6 col-lg-3 mb-4 mb-lg-0">
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_35.jpg"
@@ -432,7 +440,7 @@ const IndexPage = () => (
               placeholder="blurred"
             />
           </div>
-          <div className="col-4">
+          <div className="col-6 col-lg-4">
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_33.jpg"
@@ -441,7 +449,7 @@ const IndexPage = () => (
               placeholder="blurred"
             />
           </div>
-          <div className="col-5">
+          <div className="col-6 col-lg-5">
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_32.jpg"

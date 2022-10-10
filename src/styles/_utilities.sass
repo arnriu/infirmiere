@@ -1,6 +1,9 @@
 .quote
     position: relative
 
+    @include media-breakpoint-down(lg)
+        font-size: 1.5rem !important
+
     &::after
         content: ''
         position: absolute
@@ -23,6 +26,9 @@
 .img-border-right
     border-top-right-radius: 1.5rem
     border-bottom-right-radius: 1.5rem
+
+    @include media-breakpoint-down(lg)
+        border-radius: 1.5rem
 
 h1, h2
     font-weight: bold

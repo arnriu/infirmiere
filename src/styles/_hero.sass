@@ -11,6 +11,11 @@
         height: 100%
         border-radius: 2rem
 
+        @media (max-width: 1550px)
+            width: 100vw
+            left: 50%
+            transform: translate(-50%,0)
+
         .green &
             background: $green-400
 
@@ -22,6 +27,9 @@
 
     &.hero-header
         padding: 7rem 0
+
+        @include media-breakpoint-down(lg)
+            padding: 2rem 1.5rem !important
 
         &:before
             background-size: 100%

@@ -13,20 +13,22 @@ const APropos = () => (
     <section className="mb-5">
       <div className="container hero hero-header hero-about">
         <div className="row">
-          <div className="col-6 pt-5">
-            <h1 className="mb-4">À propos</h1>
-            <p className="mb-5">
+          <div className="col-12 col-lg-6 pt-2 pt-lg-5 mb-5 mb-lg-0">
+            <h1 className="display-1 fw-bold mb-4">À propos</h1>
+            <p className="mb-3 mb-lg-5">
               En tant qu’infirmière libérale, mon but est de donner à chacun les
               soins qu’il mérite, des plus jeunes aux plus âgés, afin de
               continuer à croquer la vie à pleines dents !
             </p>
-            <Link className="btn btn-red me-5" to="/a-propos#faq">
-              Questions fréquentes
-            </Link>
+            <div className="d-flex d-lg-block flex-column align-items-center">
+              <Link className="btn btn-red me-lg-5" to="/a-propos#faq">
+                Questions fréquentes
+              </Link>
+            </div>
           </div>
           <div className="col">
             <div className="row">
-              <div className="col-5 offset-2 position-relative">
+              <div className="col-12 col-lg-5 offset-lg-2 position-relative">
                 <StaticImage
                   className="rounded-5"
                   src="../assets/images/caroline.jpg"
@@ -34,10 +36,7 @@ const APropos = () => (
                   placeholder="blurred"
                   style={{ height: 400 }}
                 />
-                <div
-                  className="d-flex align-items-center position-absolute bg-white rounded-4 ps-2 py-2 pe-3"
-                  style={{ transform: 'translate(-40%, -50%)' }}
-                >
+                <div className="name-badge d-flex align-items-center position-absolute bg-white rounded-4 ps-2 py-2 pe-3 mt-4 mt-lg-0">
                   <div className="me-3">
                     <StaticImage
                       src="../assets/images/oni.jpg"
@@ -46,14 +45,17 @@ const APropos = () => (
                     />
                   </div>
                   <div>
-                    <strong style={{ fontSize: '.875rem' }}>
+                    <strong
+                      className="text-nowrap"
+                      style={{ fontSize: '.875rem' }}
+                    >
                       Caroline Jomard Serbin
                     </strong>
                     <div className="text-secondary text-badge">Infirmière</div>
                   </div>
                 </div>
               </div>
-              <div className="col mt-5 position-relative">
+              <div className="col-12 col-lg-5 mt-4 mt-lg-5 position-relative">
                 <Pattern
                   width="144"
                   style={{
@@ -76,7 +78,7 @@ const APropos = () => (
       </div>
     </section>
 
-    <section className="bg-light py-5">
+    <section className="bg-light py-4 py-lg-5">
       <div className="container">
         <div className="row mb-3">
           <strong className="text-red text-uppercase text-badge">
@@ -84,17 +86,17 @@ const APropos = () => (
           </strong>
         </div>
         <div className="row mb-5">
-          <div className="col">
-            <h2>Parcours professionnel</h2>
+          <div className="col-12 col-lg-6">
+            <h2 className="display-2 fw-bold">Parcours professionnel</h2>
           </div>
-          <div className="col text-secondary">
+          <div className="col-12 col-lg-6 text-secondary">
             “Chaque jour est une nouvelle expérience et chaque expérience doit
             faire espérer un nouveau jour.”
           </div>
         </div>
 
-        <div className="row g-5">
-          <div className="col">
+        <div className="row g-lg-5">
+          <div className="col-12 col-lg-4 mb-4 mb-lg-0">
             <a
               className="nav-link"
               href="https://www.fo-rothschild.fr/"
@@ -116,7 +118,7 @@ const APropos = () => (
               </h5>
             </a>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-4 mb-4 mb-lg-0">
             <a
               className="nav-link"
               href="https://www.aphp.fr/"
@@ -140,7 +142,7 @@ const APropos = () => (
               </h5>
             </a>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-4 mb-4 mb-lg-0">
             <a
               className="nav-link"
               href="https://curie.fr/"
@@ -166,11 +168,11 @@ const APropos = () => (
       </div>
     </section>
 
-    <section className="py-5">
+    <section className="py-4 py-lg-5">
       <div className="container">
         <div className="row mb-5">
-          <div className="col-6 offset-3 text-center">
-            <h2 className="mb-3">Les chiffres</h2>
+          <div className="col-12 col-lg-6 offset-lg-3 text-center">
+            <h2 className="display-2 fw-bold mb-3">Les chiffres</h2>
 
             <div className="col text-secondary">
               Aucun chiffre ne peut décrire les relations avec ma patientelle,
@@ -180,9 +182,9 @@ const APropos = () => (
         </div>
 
         <div className="row mb-4">
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-4">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <strong className="fs-1 text-black">15</strong>
                 </div>
@@ -197,9 +199,9 @@ const APropos = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-4">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <strong className="fs-1 text-black">3</strong>
                 </div>
@@ -214,9 +216,9 @@ const APropos = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-4">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <strong className="fs-1 text-black">6</strong>
                 </div>
@@ -231,9 +233,9 @@ const APropos = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-4">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <strong className="fs-1 text-black">∞</strong>
                 </div>
@@ -251,9 +253,9 @@ const APropos = () => (
         </div>
 
         <div className="row">
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-4">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <strong className="fs-1 text-black">56</strong>
                 </div>
@@ -269,9 +271,9 @@ const APropos = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-4">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
                   <strong className="fs-1 text-black">4</strong>
                 </div>
@@ -287,9 +289,9 @@ const APropos = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-4">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-4 py-lg-5">
                 <div className="card-img-icon w-auto d-flex align-items-center justify-content-center bg-white rounded-4">
                   <strong className="fs-1 text-black">208</strong>
                 </div>
@@ -304,9 +306,9 @@ const APropos = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-3 mb-4">
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
-              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-5">
+              <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-red-100 py-4 py-lg-5">
                 <div className="card-img-icon w-auto d-flex align-items-center justify-content-center bg-white rounded-4">
                   <strong className="fs-1 text-black">500+</strong>
                 </div>
@@ -326,7 +328,7 @@ const APropos = () => (
     </section>
 
     <section className="mb-5">
-      <div className="container hero py-5">
+      <div className="container hero py-4 py-lg-5">
         <div className="row mt-4 mb-3">
           <div className="col">
             <strong className="text-red text-uppercase text-badge">
@@ -334,21 +336,21 @@ const APropos = () => (
             </strong>
           </div>
         </div>
-        <div className="row mb-5">
-          <div className="col-5">
-            <h2 className="mb-3">
+        <div className="row mb-3 mb-lg-5">
+          <div className="col-12 col-lg-5">
+            <h2 className="display-2 fw-bold mb-3">
               L’avis de mes patients compte plus que tout !
             </h2>
           </div>
 
-          <h5 className="col-5 offset-2 text-secondary">
+          <h5 className="col-12 col-lg-5 offset-lg-2 text-secondary">
             C’est en partie grâce à vous que je trouve la force de me lever
             chaque matin pour vous accompagner dans vos combats quotidiens !
           </h5>
         </div>
 
-        <div className="row pt-5 mb-5">
-          <div className="col">
+        <div className="row pt-5 mb-0 mb-lg-5">
+          <div className="col-12 col-lg-4 mb-5 mb-lg-0">
             <div className="card h-100 border-0 review rounded-5 pb-4">
               <div className="card-img-top card-review-img text-center">
                 <StaticImage
@@ -375,7 +377,7 @@ const APropos = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-4 mb-5 mb-lg-0">
             <div className="card h-100 border-0 review rounded-5 pb-4">
               <div className="card-img-top card-review-img text-center">
                 <StaticImage
@@ -400,7 +402,7 @@ const APropos = () => (
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col-12 col-lg-4 mb-5 mb-lg-0">
             <div className="card h-100 border-0 review rounded-5 pb-4">
               <div className="card-img-top card-review-img text-center">
                 <StaticImage
@@ -428,7 +430,7 @@ const APropos = () => (
       </div>
     </section>
 
-    <section className="pb-5 mb-5" id="faq">
+    <section className="pb-5 mb-lg-5" id="faq">
       <div className="container">
         <div className="row mb-3">
           <div className="col text-center">
@@ -437,12 +439,12 @@ const APropos = () => (
         </div>
         <div className="row mb-5">
           <div className="col text-center">
-            <h2>Questions fréquentes</h2>
+            <h2 className="display-2 fw-bold">Questions fréquentes</h2>
           </div>
         </div>
 
         <div className="row">
-          <div className="col-8 offset-2">
+          <div className="col-12 col-lg-8 offset-lg-2">
             <Accordion defaultActiveKey="0" flush>
               <Accordion.Item eventKey="0">
                 <Accordion.Header>

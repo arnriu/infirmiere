@@ -4,12 +4,23 @@
     width: 100%
     top: -3rem
 
+    @include media-breakpoint-down(lg)
+        height: auto
+        width: auto
+        top: 0
+        margin-top: 1.5rem
+
     > *
         position: absolute !important
         width: 78%
         left: 50%
         top: -2.5rem
         transform: translate(-50%, 0)
+
+        @include media-breakpoint-down(lg)
+            position: relative !important
+            top: 0
+            height: 50%
 
 .contact-icon
     background-image: url('../assets/svg/outline_purple.svg')
@@ -26,6 +37,9 @@
     margin-top: -19.5rem
     box-shadow: 0 6rem 6rem rgba($dark, 0.05)
 
+    @include media-breakpoint-down(lg)
+        margin-top: 0
+
 .contact-map
     .card
         transition: all .3s ease
@@ -34,3 +48,10 @@
     &:hover
         .card
             box-shadow: 0 .5rem 6rem rgba($purple-400, .5)
+
+.name-badge
+    transform: translate(-40%, -50%)
+
+    @include media-breakpoint-down(lg)
+        position: relative !important
+        transform: none
