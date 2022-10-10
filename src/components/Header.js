@@ -10,7 +10,7 @@ const Header = ({ pageColor }) => {
   const handleNavbar = () => setNavbarOpen(!navbarOpen)
 
   return (
-    <header className="navbar py-4">
+    <header className="navbar sticky-top py-lg-4">
       <nav
         className="container flex-wrap flex-lg-nowrap"
         aria-label="Navigation principale"
