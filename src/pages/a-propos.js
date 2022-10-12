@@ -140,9 +140,9 @@ const APropos = () => (
                 backgroundColor="white"
                 transformOptions={{ fit: 'contain' }}
               />
-              <h5 className="text-dark text-center fw-bold">
+              <div className="h5 text-dark text-center fw-bold">
                 Fondation A. de Rothschild, Paris Ophtalmologie
-              </h5>
+              </div>
             </a>
           </div>
           <div className="col-12 col-lg-4 mb-4 mb-lg-0">
@@ -162,11 +162,11 @@ const APropos = () => (
                 backgroundColor="white"
                 transformOptions={{ fit: 'contain' }}
               />
-              <h5 className="text-dark text-center fw-bold">
+              <div className="h5 text-dark text-center fw-bold">
                 Assistance publique, Hôpitaux de Paris
                 <br />
                 Tenon, Robert Debré
-              </h5>
+              </div>
             </a>
           </div>
           <div className="col-12 col-lg-4 mb-4 mb-lg-0">
@@ -186,9 +186,9 @@ const APropos = () => (
                 backgroundColor="white"
                 transformOptions={{ fit: 'contain' }}
               />
-              <h5 className="text-dark text-center fw-bold">
+              <div className="h5 text-dark text-center fw-bold">
                 Institut Curie Paris
-              </h5>
+              </div>
             </a>
           </div>
         </div>
@@ -217,9 +217,9 @@ const APropos = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title">
+                <div className="h5 card-title">
                   <strong>Années de service</strong>
-                </h5>
+                </div>
                 <div className="card-text text-secondary">
                   Hôpitaux, cliniques, instituts et missions humanitaires.
                 </div>
@@ -234,9 +234,9 @@ const APropos = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title">
+                <div className="h5 card-title">
                   <strong>Diplômes</strong>
-                </h5>
+                </div>
                 <div className="card-text text-secondary">
                   Agréés d’état dans le domaine médical et d’aide à la personne.
                 </div>
@@ -251,9 +251,9 @@ const APropos = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title">
+                <div className="h5 card-title">
                   <strong>Membres d’équipe</strong>
-                </h5>
+                </div>
                 <div className="card-text text-secondary">
                   Pour vous remettre au top de votre forme chaque jour !
                 </div>
@@ -268,9 +268,9 @@ const APropos = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title">
+                <div className="h5 card-title">
                   <strong>Une infinité</strong>
-                </h5>
+                </div>
                 <div className="card-text text-secondary">
                   D’amour et de passion partagés chaque jour dans mon travail.
                 </div>
@@ -288,9 +288,9 @@ const APropos = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title">
+                <div className="h5 card-title">
                   <strong>Morbihan</strong>
-                </h5>
+                </div>
                 <div className="card-text text-secondary">
                   Je me déplace dans toute la région pour encore plus de
                   confort.
@@ -306,9 +306,9 @@ const APropos = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title">
+                <div className="h5 card-title">
                   <strong>Lieux d’interventions</strong>
-                </h5>
+                </div>
                 <div className="card-text text-secondary">
                   À votre domicile, à l’école, sur votre lieu de travail ou à
                   mon cabinet.
@@ -324,9 +324,9 @@ const APropos = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title">
+                <div className="h5 card-title">
                   <strong>Véhicule de fonction</strong>
-                </h5>
+                </div>
                 <div className="card-text text-secondary">
                   Mon bolide qui assure mes déplacements jusque chez vous !
                 </div>
@@ -341,9 +341,9 @@ const APropos = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title">
+                <div className="h5 card-title">
                   <strong>Tours de magie</strong>
-                </h5>
+                </div>
                 <div className="card-text text-secondary">
                   Plus de 500 patients ont déjà bénéficiés de mes soins.
                 </div>
@@ -370,10 +370,10 @@ const APropos = () => (
             </h2>
           </div>
 
-          <h5 className="col-12 col-lg-5 offset-lg-2 text-secondary">
+          <div className="h5 col-12 col-lg-5 offset-lg-2 text-secondary">
             C’est en partie grâce à vous que je trouve la force de me lever
             chaque matin pour vous accompagner dans vos combats quotidiens !
-          </h5>
+          </div>
         </div>
 
         <div className="row pt-5 mb-0 mb-lg-5">

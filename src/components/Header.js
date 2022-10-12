@@ -33,7 +33,10 @@ const Header = ({ pageColor }) => {
             aria-label="Toggle navigation"
             onClick={handleNavbar}
           >
-            <ThreeDots style={{ width: '1.5rem', height: '1.5rem' }} />
+            <ThreeDots
+              style={{ width: '1.5rem', height: '1.5rem' }}
+              aria-hidden="true"
+            />
           </button>
         </div>
 
@@ -42,6 +45,7 @@ const Header = ({ pageColor }) => {
             navbarOpen ? 'show' : ''
           }`}
           aria-labelledby="bdNavbarOffcanvasLabel"
+          id="bdNavbar"
         >
           <div className="offcanvas-header px-4 pb-0">
             <h5

@@ -105,7 +105,7 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title fw-bold">Pansements</h5>
+                <div className="h5 card-title fw-bold">Pansements</div>
                 <div className="card-text text-secondary">
                   Suivi des plaies chroniques ou post-opératoires. Pansements
                   courants, lourds ou complexes.
@@ -121,9 +121,9 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title fw-bold">
+                <div className="h5 card-title fw-bold">
                   Injections / Prélèvements
-                </h5>
+                </div>
                 <div className="card-text text-secondary">
                   Intra-musculaire, sous-cutanné, intra-veineuse, ou tout autre
                   type de prélèvement.
@@ -139,7 +139,7 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title fw-bold">Perfusions</h5>
+                <div className="h5 card-title fw-bold">Perfusions</div>
                 <div className="card-text text-secondary">
                   Intra-veineux ou sous-cutané, de courte ou longue durée
                   (antibiotique, hydratation, chimio..)
@@ -155,7 +155,7 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title fw-bold">Traitements</h5>
+                <div className="h5 card-title fw-bold">Traitements</div>
                 <div className="card-text text-secondary">
                   Administration de traitements, préparation des semainiers,
                   etc.
@@ -174,7 +174,9 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title fw-bold">Pathologies chroniques</h5>
+                <div className="h5 card-title fw-bold">
+                  Pathologies chroniques
+                </div>
                 <div className="card-text text-secondary">
                   Suivi de diabète, BPCO, maladie de Parkinson, insuffisance
                   cardiaque, etc...
@@ -190,7 +192,7 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title fw-bold">COVID-19</h5>
+                <div className="h5 card-title fw-bold">COVID-19</div>
                 <div className="card-text text-secondary">
                   Test antigéniques, PCR, vaccination et rappels.
                 </div>
@@ -205,7 +207,7 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title fw-bold">Soins de stomie</h5>
+                <div className="h5 card-title fw-bold">Soins de stomie</div>
                 <div className="card-text text-secondary">
                   Pansements avec matériel adapté, évaluation et quantification
                   des sorties.
@@ -221,7 +223,7 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="card-body text-center">
-                <h5 className="card-title fw-bold">Hygiène et confort</h5>
+                <div className="h5 card-title fw-bold">Hygiène et confort</div>
                 <div className="card-text text-secondary">
                   Aide à la toilette et change vestimentaire.
                 </div>
@@ -315,9 +317,9 @@ const IndexPage = () => (
                     <Check aria-hidden="true" />
                   </div>
                   <div className="ms-2">
-                    <h5>
+                    <div className="h5">
                       <strong>Responsabilité et sécurité</strong>
-                    </h5>
+                    </div>
                     <div className="card-text text-secondary">
                       En acceptant mes services, vous serez toujours traité de
                       la meilleure des manières.
@@ -331,9 +333,9 @@ const IndexPage = () => (
                     <Hands aria-hidden="true" />
                   </div>
                   <div className="ms-2">
-                    <h5>
+                    <div className="h5">
                       <strong>Facilité de remboursement</strong>
-                    </h5>
+                    </div>
                     <div className="card-text text-secondary">
                       Conventionnée Assurance Maladie, AME, CSS, CMU, toutes
                       mutuelles.
@@ -353,9 +355,9 @@ const IndexPage = () => (
                     <Caducet aria-hidden="true" />
                   </div>
                   <div className="ms-2">
-                    <h5>
+                    <div className="h5">
                       <strong>Secret professionnel</strong>
-                    </h5>
+                    </div>
                     <div className="card-text text-secondary">
                       Fidèle au serment d’Hippocrate, vos soins sont exclusifs
                       et confidentiels.
@@ -369,9 +371,9 @@ const IndexPage = () => (
                     <HeartHands aria-hidden="true" />
                   </div>
                   <div className="ms-2">
-                    <h5>
+                    <div className="h5">
                       <strong>Respect</strong>
-                    </h5>
+                    </div>
                     <div className="card-text text-secondary">
                       Du petit pansement aux maladies mortelles, mon rôle est
                       avant tout de soigner avec tact et sans jugements.
