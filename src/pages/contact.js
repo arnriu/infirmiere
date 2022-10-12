@@ -278,5 +278,11 @@ const Contact = () => {
 export default Contact
 
 export const Head = () => (
-  <title>Contact - Caroline Jomard Serbin, Infirmière libérale à Séné</title>
+  <>
+    <title>Contact - Caroline Jomard Serbin, Infirmière libérale à Séné</title>
+    <meta
+      name="description"
+      content="Caroline Jomard Serbin est une infirmière libérale disponible à Séné et ses environs."
+    />
+  </>
 )
