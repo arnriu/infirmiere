@@ -21,7 +21,7 @@ const Header = ({ pageColor }) => {
           to="/"
           aria-label="Caroline Jomard Serbin"
         >
-          <Logo width="204" role="img" />
+          <Logo width="204" role="img" title="Caroline Jomard Serbin" />
         </Link>
         <div className="d-flex">
           <button

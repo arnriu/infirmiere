@@ -8,14 +8,15 @@ import Location from '../assets/svg/inline/location.svg'
 
 const Footer = () => (
   <footer className="bg-dark pt-4 pt-lg-5">
-    <nav className="container">
+    <div className="container">
       <div className="row mt-3 mb-5">
         <div className="col-12 col-lg-6 pe-lg-5 mb-5 mb-lg-0">
           <Link
             className="navbar-brand d-flex d-lg-block justify-content-center"
             to="/"
+            aria-label="Caroline Jomard Serbin"
           >
-            <LogoWhite width="204" />
+            <LogoWhite width="204" role="img" title="Caroline Jomard Serbin" />
           </Link>
 
           <div className="text-footer fw-bold mt-3">
@@ -58,7 +59,7 @@ const Footer = () => (
                 <li className="nav-item mb-4">
                   <div className="d-flex align-items-center">
                     <div className="footer-icon me-3">
-                      <Calling />
+                      <Calling aria-hidden="true" />
                     </div>
                     <div className="fw-bold">
                       <div className="text-footer">Téléphone</div>
@@ -71,7 +72,7 @@ const Footer = () => (
                 <li className="nav-item mb-4">
                   <div className="d-flex align-items-center">
                     <div className="footer-icon me-3">
-                      <Mail />
+                      <Mail aria-hidden="true" />
                     </div>
                     <div className="fw-bold">
                       <div className="text-footer">E-mail</div>
@@ -87,7 +88,7 @@ const Footer = () => (
                 <li className="nav-item">
                   <div className="d-flex align-items-center">
                     <div className="footer-icon me-3">
-                      <Location />
+                      <Location width="64" />
                     </div>
                     <div className="fw-bold">
                       <div className="text-footer">Adresse</div>
@@ -108,7 +109,7 @@ const Footer = () => (
         </div>
       </div>
       <div className="text-footer">©CarolineJomardSerbin</div>
-    </nav>
+    </div>
   </footer>
 )
 

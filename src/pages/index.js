@@ -37,13 +37,13 @@ const IndexPage = () => (
             </p>
             <div className="d-flex d-lg-block flex-column align-items-center">
               <Link
-                className="btn btn-green mb-3 mb-lg-0 mx-auto me-lg-5"
+                className="btn btn-green mb-3 mx-auto me-lg-5"
                 to="/a-propos"
               >
                 En savoir plus
               </Link>
               <Link
-                className="btn btn-green mb-3 mb-lg-0 mx-auto me-lg-5"
+                className="btn btn-green mb-3 mx-auto me-lg-5"
                 to="/contact#formulaire"
               >
                 Prendre RDV
@@ -52,7 +52,7 @@ const IndexPage = () => (
           </div>
           <div className="col">
             <div className="home-image">
-              <Home />
+              <Home aria-hidden="true" />
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <Pansement />
+                  <Pansement aria-hidden="true" />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -117,7 +117,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <Seringue />
+                  <Seringue aria-hidden="true" />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -135,7 +135,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <Perfusion />
+                  <Perfusion aria-hidden="true" />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -151,7 +151,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <Pills />
+                  <Pills aria-hidden="true" />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -170,7 +170,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <Time />
+                  <Time aria-hidden="true" />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -186,7 +186,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <Virus />
+                  <Virus aria-hidden="true" />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -201,7 +201,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <Larynx />
+                  <Larynx aria-hidden="true" />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -217,7 +217,7 @@ const IndexPage = () => (
             <div className="card card-shadow h-100 pt-3 px-3 rounded-5">
               <div className="card-img-top rounded-5 d-flex align-items-center justify-content-center bg-green-100 py-4 py-lg-5">
                 <div className="card-img-icon d-flex align-items-center justify-content-center bg-white rounded-4">
-                  <Douche />
+                  <Douche aria-hidden="true" />
                 </div>
               </div>
               <div className="card-body text-center">
@@ -240,7 +240,7 @@ const IndexPage = () => (
               <StaticImage
                 className="rounded-4"
                 src="../assets/images/patient-receiving-dental-treatment.png"
-                alt=""
+                alt="Photo d'une petite fille souriante accompagnée d'une infirmière pédiatrique."
                 placeholder="blurred"
               />
             </div>
@@ -312,7 +312,7 @@ const IndexPage = () => (
               <div className="col mb-4 mb-lg-0">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
-                    <Check />
+                    <Check aria-hidden="true" />
                   </div>
                   <div className="ms-2">
                     <h5>
@@ -328,7 +328,7 @@ const IndexPage = () => (
               <div className="col">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
-                    <Hands />
+                    <Hands aria-hidden="true" />
                   </div>
                   <div className="ms-2">
                     <h5>
@@ -350,7 +350,7 @@ const IndexPage = () => (
               <div className="col mb-4 mb-lg-0">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
-                    <Caducet />
+                    <Caducet aria-hidden="true" />
                   </div>
                   <div className="ms-2">
                     <h5>
@@ -366,7 +366,7 @@ const IndexPage = () => (
               <div className="col">
                 <div className="d-flex">
                   <div className="card-img-icon d-flex flex-grow-0 flex-shrink-0 align-items-center justify-content-center bg-white rounded-4 ms-3 me-4 mt-2">
-                    <HeartHands />
+                    <HeartHands aria-hidden="true" />
                   </div>
                   <div className="ms-2">
                     <h5>
@@ -407,7 +407,7 @@ const IndexPage = () => (
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_31.jpg"
-              alt=""
+              alt="Photo de Caroline Jomard Serbin avec un enfant"
               style={{ height: 300 }}
               placeholder="blurred"
             />
@@ -416,7 +416,7 @@ const IndexPage = () => (
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_36.jpg"
-              alt=""
+              alt="Photo d'un dessin sur un bras"
               style={{ height: 300 }}
               placeholder="blurred"
             />
@@ -425,7 +425,7 @@ const IndexPage = () => (
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_34.jpg"
-              alt=""
+              alt="Photo de Caroline Jomard Serbin et d'une enfant. Elles portent des ours en peluches."
               style={{ height: 300 }}
               placeholder="blurred"
             />
@@ -435,7 +435,7 @@ const IndexPage = () => (
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_35.jpg"
-              alt=""
+              alt="Photo de Caroline Jomard Serbin de dos lors de l'évènement &quot;l'hôpital en fête&quot;"
               style={{ height: 300 }}
               placeholder="blurred"
             />
@@ -444,7 +444,7 @@ const IndexPage = () => (
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_33.jpg"
-              alt=""
+              alt="Photo de Caroline Jomard Serbin et d'une enfant souriante sur un lit d'hôpital durant un match de l'équipe de France de footbal"
               style={{ height: 300 }}
               placeholder="blurred"
             />
@@ -453,7 +453,7 @@ const IndexPage = () => (
             <StaticImage
               className="rounded-5 w-100"
               src="../assets/images/image_32.jpg"
-              alt=""
+              alt="Photo de Caroline Jmard Serbin accompagnant des enfants sur un bateau"
               style={{ height: 300 }}
               placeholder="blurred"
             />

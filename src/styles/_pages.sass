@@ -49,9 +49,11 @@
         .card
             box-shadow: 0 .5rem 6rem rgba($purple-400, .5)
 
-.name-badge
-    transform: translate(-40%, -50%)
+.about-images
+    .gatsby-image-wrapper
+        @include media-breakpoint-down(lg)
+            height: 275px !important
 
-    @include media-breakpoint-down(lg)
-        position: relative !important
-        transform: none
+    .name-badge
+        transform: translate(-40%, -50%)
+        min-width: 17rem

@@ -27,19 +27,20 @@ const APropos = () => (
             </div>
           </div>
           <div className="col">
-            <div className="row">
-              <div className="col-12 col-lg-5 offset-lg-2 position-relative">
+            <div className="row about-images">
+              <div className="col-6 col-lg-5 offset-lg-2 position-relative">
                 <StaticImage
                   className="rounded-5"
                   src="../assets/images/caroline.jpg"
-                  alt=""
+                  alt="Photo de profil de Caroline Jomard Serbin"
                   placeholder="blurred"
                   style={{ height: 400 }}
                 />
-                <div className="name-badge d-flex align-items-center position-absolute bg-white rounded-4 ps-2 py-2 pe-3 mt-4 mt-lg-0">
+                <div className="name-badge d-none d-lg-flex align-items-center position-absolute bg-white rounded-4 ps-2 py-2 pe-3 mt-4 mt-lg-0">
                   <div className="me-3">
                     <StaticImage
                       src="../assets/images/oni.jpg"
+                      alt="Logo de l'Ordre National des Infirmiers"
                       placeholder="blurred"
                       style={{ width: 70 }}
                     />
@@ -55,7 +56,7 @@ const APropos = () => (
                   </div>
                 </div>
               </div>
-              <div className="col-12 col-lg-5 mt-4 mt-lg-5 position-relative">
+              <div className="col-6 col-lg-5 mt-4 mt-lg-5 position-relative">
                 <Pattern
                   width="144"
                   style={{
@@ -63,14 +64,40 @@ const APropos = () => (
                     bottom: '-.5rem',
                     right: '-.5rem'
                   }}
+                  aria-hidden="true"
                 />
                 <StaticImage
                   className="rounded-5"
                   src="../assets/images/woman-patient-dentist.jpg"
-                  alt=""
+                  alt="Photo d'une infirmière faisant un coeur avec ses mains"
                   placeholder="blurred"
                   style={{ height: 400 }}
                 />
+              </div>
+            </div>
+
+            <div className="row d-lg-none">
+              <div className="col d-flex justify-content-center">
+                <div className="d-flex align-items-center bg-white rounded-4 ps-2 py-2 pe-3 mt-4 mt-lg-0">
+                  <div className="me-3">
+                    <StaticImage
+                      src="../assets/images/oni.jpg"
+                      alt="Logo de l'Ordre National des Infirmiers"
+                      placeholder="blurred"
+                      style={{ width: 70 }}
+                      aria-hidden="true"
+                    />
+                  </div>
+                  <div>
+                    <strong
+                      className="text-nowrap"
+                      style={{ fontSize: '.875rem' }}
+                    >
+                      Caroline Jomard Serbin
+                    </strong>
+                    <div className="text-secondary text-badge">Infirmière</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -106,7 +133,7 @@ const APropos = () => (
               <StaticImage
                 className="rounded-5 border w-100 mb-3"
                 src="../assets/images/healthcare.jpg"
-                alt=""
+                alt="Logo de la fondation A. de Rothschild"
                 placeholder="blurred"
                 layout="fullWidth"
                 aspectRatio={5 / 4}
@@ -128,7 +155,7 @@ const APropos = () => (
               <StaticImage
                 className="rounded-5 border w-100 mb-3"
                 src="../assets/images/aphp.jpg"
-                alt=""
+                alt="Logo de l'Assistance Publique, Hôpitaux de Paris"
                 placeholder="blurred"
                 layout="fullWidth"
                 aspectRatio={5 / 4}
@@ -152,7 +179,7 @@ const APropos = () => (
               <StaticImage
                 className="rounded-5 border w-100 mb-3"
                 src="../assets/images/curie.jpg"
-                alt=""
+                alt="Logo de l'Institut Curie Paris"
                 placeholder="blurred"
                 layout="fullWidth"
                 aspectRatio={5 / 4}
@@ -358,6 +385,7 @@ const APropos = () => (
                   src="../assets/images/SoniaDo.png"
                   alt=""
                   placeholder="blurred"
+                  aria-hidden="true"
                 />
               </div>
               <div className="card-body text-center">
@@ -373,7 +401,7 @@ const APropos = () => (
                 </p>
               </div>
               <div className="align-self-center review-stars mb-3">
-                <Stars />
+                <Stars aria-hidden="true" />
               </div>
             </div>
           </div>
@@ -385,6 +413,7 @@ const APropos = () => (
                   src="../assets/images/Melysande.png"
                   alt=""
                   placeholder="blurred"
+                  aria-hidden="true"
                 />
               </div>
               <div className="card-body text-center">
@@ -398,7 +427,7 @@ const APropos = () => (
                 </p>
               </div>
               <div className="align-self-center review-stars mb-3">
-                <Stars />
+                <Stars aria-hidden="true" />
               </div>
             </div>
           </div>
@@ -410,6 +439,7 @@ const APropos = () => (
                   src="../assets/images/MadSauvegarde.png"
                   alt=""
                   placeholder="blurred"
+                  aria-hidden="true"
                 />
               </div>
               <div className="card-body text-center">
@@ -422,7 +452,7 @@ const APropos = () => (
                 </p>
               </div>
               <div className="align-self-center review-stars mb-3">
-                <Stars />
+                <Stars aria-hidden="true" />
               </div>
             </div>
           </div>
@@ -447,49 +477,51 @@ const APropos = () => (
           <div className="col-12 col-lg-8 offset-lg-2">
             <Accordion defaultActiveKey="0" flush>
               <Accordion.Item eventKey="0">
-                <Accordion.Header>
+                <Accordion.Header id="acc1">
                   Quelles sont les procédures à suivre pour bénéficier de vos
                   soins ?
                 </Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body aria-labelledby="acc1">
                   Il suffit simplement de m’envoyer une demande par mail,
                   téléphone ou via medicalib et de remplir le formulaire pour
                   une prise en charge totale. Le reste, c’est moi qui gère!
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
-                <Accordion.Header>
+                <Accordion.Header id="acc2">
                   Dans quel secteur géographique intervenez-vous ?
                 </Accordion.Header>
-                <Accordion.Body>Séné et ses environs.</Accordion.Body>
+                <Accordion.Body aria-labelledby="acc2">
+                  Séné et ses environs.
+                </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
-                <Accordion.Header>
+                <Accordion.Header id="acc3">
                   Mon fils de 2 mois a besoin d’une prise de sang, est-ce
                   possible ?
                 </Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body aria-labelledby="acc3">
                   Oui bien sûr, je peux faire tout type de soins à une
                   patientèle âgée de quelques jours à 120 ans.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">
-                <Accordion.Header>
+                <Accordion.Header id="acc4">
                   Dois-je payer des frais pour une ordonnance de soins
                   quotidiens ?
                 </Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body aria-labelledby="acc4">
                   Si vos documents sont à jour, assurance maladie, mutuelle,
                   CSS, CMU, AME. Pas de soucis, vous n'aurez pas de frais à
                   avancer.
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="4">
-                <Accordion.Header>
+                <Accordion.Header id="acc5">
                   Je travaille beaucoup, pouvez-vous passer avant 8h ou après
                   19h ?
                 </Accordion.Header>
-                <Accordion.Body>
+                <Accordion.Body aria-labelledby="acc5">
                   Oui bien sûr, nous convenons ensemble de la tranche horaire de
                   passage qui vous convient le mieux, avant ou après votre
                   travail.

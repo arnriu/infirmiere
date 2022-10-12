@@ -27,6 +27,7 @@ const Contact = () => {
         className={`d-flex align-items-center justify-content-center fixed-top bg-purple-400-blured vw-100 fade ${
           success ? 'vh-100 show' : endAnim ? '' : 'vh-100'
         }`}
+        tabindex="-1"
       >
         <div
           className={`text-center bg-white border border-5 border-purple rounded-5 p-5 d-block ${
@@ -34,7 +35,12 @@ const Contact = () => {
           }`}
         >
           <div className="fs-1 d-inline-flex align-items-center mb-3">
-            <CheckPurple width="64" height="64" style={{ marginLeft: -32 }} />
+            <CheckPurple
+              width="64"
+              height="64"
+              style={{ marginLeft: -32 }}
+              aria-hidden="true"
+            />
             <strong>Merci !</strong>
           </div>
           <p>
@@ -181,7 +187,7 @@ const Contact = () => {
                   <div className="col-12 col-lg-6 order-2 order-lg-0">
                     <div className="d-flex align-items-center">
                       <div className="contact-icon me-3">
-                        <CallingWhite />
+                        <CallingWhite aria-hidden="true" />
                       </div>
                       <div className="fw-bold">
                         <div className="text-purple">En cas d'urgence</div>
@@ -235,16 +241,16 @@ const Contact = () => {
                         <StaticImage
                           className="img-border-left mt-4 ms-4"
                           src="../assets/images/image_40.jpg"
-                          alt=""
+                          alt="Photos de l'intérieur du cabinet de Caroline Jomard Serbin"
                           style={{ height: 410 }}
                           placeholder="blurred"
                         />
                       </div>
-                      <div className="col-12 col-lg-5">
+                      <div className="col-12 col-lg-5 d-flex">
                         <StaticImage
-                          className="img-border-right mt-4 mx-4 ms-lg-0"
+                          className="img-border-right flex-grow-1 mt-4 mx-4 ms-lg-0"
                           src="../assets/images/map.jpg"
-                          alt=""
+                          alt="Carte montrant la localisation du cabinet de Caroline Jomard Serbin"
                           style={{ height: 410 }}
                           placeholder="blurred"
                         />
