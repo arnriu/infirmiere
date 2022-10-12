@@ -538,5 +538,11 @@ const APropos = () => (
 export default APropos
 
 export const Head = () => (
-  <title>A propos - Caroline Jomard Serbin, Infirmière libérale à Séné</title>
+  <>
+    <title>A propos - Caroline Jomard Serbin, Infirmière libérale à Séné</title>
+    <meta
+      name="description"
+      content="Caroline Jomard Serbin est une infirmière libérale disponible à Séné et ses environs."
+    />
+  </>
 )

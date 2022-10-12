@@ -469,5 +469,11 @@ const IndexPage = () => (
 export default IndexPage
 
 export const Head = () => (
-  <title>Caroline Jomard Serbin, Infirmière libérale à Séné</title>
+  <>
+    <title>Caroline Jomard Serbin, Infirmière libérale à Séné</title>
+    <meta
+      name="description"
+      content="Caroline Jomard Serbin est une infirmière libérale disponible à Séné et ses environs."
+    />
+  </>
 )
