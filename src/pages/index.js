@@ -29,7 +29,8 @@ const IndexPage = () => (
               Bonjour, je suis Caroline !<br />
               <br />
               Après de longues années d’expérience à l’hôpital, me voici
-              désormais infirmière libérale en tant qu’entrepreneur indépendant.
+              désormais infirmière libérale sur le secteur de Séné, Vannes, et
+              environs.
               <br />
               <br />
               Depuis 4 ans maintenant, je me déplace au domicile des patients
